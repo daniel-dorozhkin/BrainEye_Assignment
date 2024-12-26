@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TrendsScreenViewController" customModule="BrainEye_Test" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionContainerView" destination="j1y-Zl-JO9" id="eBJ-d3-6dx"/>
+                <outlet property="segmentedControlContainerView" destination="Wle-Oa-J3n" id="3Oz-pq-i3i"/>
+                <outlet property="view" destination="W51-DB-rIg" id="qGD-Ai-TZU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="W51-DB-rIg">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fpO-jH-O8S" userLabel="Spacer">
+                    <rect key="frame" x="0.0" y="59" width="393" height="42.666666666666657"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wle-Oa-J3n" userLabel="SegmentContainerView">
+                    <rect key="frame" x="12" y="101.66666666666669" width="369" height="60"/>
+                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="GNy-xX-7Ul"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j1y-Zl-JO9" userLabel="CollectionContainerView">
+                    <rect key="frame" x="0.0" y="161.66666666666669" width="393" height="656.33333333333326"/>
+                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="wMP-ef-8Hk"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fpO-jH-O8S" firstAttribute="height" secondItem="W51-DB-rIg" secondAttribute="height" multiplier="0.05" id="2iG-uB-XLB"/>
+                <constraint firstItem="Wle-Oa-J3n" firstAttribute="height" secondItem="W51-DB-rIg" secondAttribute="height" multiplier="0.0765" priority="900" id="60v-rV-k8N"/>
+                <constraint firstItem="wMP-ef-8Hk" firstAttribute="trailing" secondItem="j1y-Zl-JO9" secondAttribute="trailing" id="6Rb-SZ-Xsu"/>
+                <constraint firstItem="j1y-Zl-JO9" firstAttribute="leading" secondItem="wMP-ef-8Hk" secondAttribute="leading" id="DUp-pc-aqF"/>
+                <constraint firstItem="fpO-jH-O8S" firstAttribute="top" secondItem="wMP-ef-8Hk" secondAttribute="top" id="EFH-YL-h50"/>
+                <constraint firstItem="wMP-ef-8Hk" firstAttribute="trailing" secondItem="fpO-jH-O8S" secondAttribute="trailing" id="Itj-t0-Uir"/>
+                <constraint firstItem="wMP-ef-8Hk" firstAttribute="bottom" secondItem="j1y-Zl-JO9" secondAttribute="bottom" id="bNk-QR-4c4"/>
+                <constraint firstItem="Wle-Oa-J3n" firstAttribute="leading" secondItem="wMP-ef-8Hk" secondAttribute="leading" constant="12" id="ckG-eh-mka"/>
+                <constraint firstItem="j1y-Zl-JO9" firstAttribute="top" secondItem="Wle-Oa-J3n" secondAttribute="bottom" id="fvv-Rc-Dmf"/>
+                <constraint firstItem="fpO-jH-O8S" firstAttribute="leading" secondItem="wMP-ef-8Hk" secondAttribute="leading" id="hyv-Zv-CZt"/>
+                <constraint firstItem="wMP-ef-8Hk" firstAttribute="trailing" secondItem="Wle-Oa-J3n" secondAttribute="trailing" constant="12" id="vni-PE-M0V"/>
+                <constraint firstItem="Wle-Oa-J3n" firstAttribute="top" secondItem="fpO-jH-O8S" secondAttribute="bottom" id="vwa-eX-11X"/>
+            </constraints>
+            <point key="canvasLocation" x="9.9236641221374047" y="-23.239436619718312"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
